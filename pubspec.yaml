@@ -1,0 +1,63 @@
+name: choco
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  name: chocoarte_web
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter: # <-- Encontre esta linha
+  uses-material-design: true # <-- Esta linha já deve existir
+
+  # ADICIONE ESTA SEÇÃO DE FONTES AQUI, COM DOIS ESPAÇOS DE INDENTAÇÃO
+  fonts:
+    - family: DancingScript
+      fonts:
+        - asset: assets/fonts/DancingScript-Bold.ttf # Certifique-se de ter este arquivo na pasta!
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf    # Certifique-se de ter este arquivo na pasta!
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+
+  # ADICIONE ESTA SEÇÃO DE ASSETS AQUI (se for usar imagens locais em vez de URLs de rede)
+  assets:
+    - assets/images/ # Se você colocar todas as imagens na pasta assets/images/
+    - assets/images/morangos_de_fundo.png  # Caminho exato para a imagem dos morangos
+    - assets/images/logo.png # Ou se preferir listar uma por uma:
+    # - assets/images/logo.png
+    # - assets/images/strawberry-left.png
+    # - assets/images/strawberry-right.png
+    # - assets/images/wave-pattern.png
